@@ -661,21 +661,49 @@ header .logo {
   padding-right: 11px;
   margin-bottom: 10px;
   cursor: pointer;
+  .example {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
 .icon-person {
   position: absolute;
-  display: block;
-  top: 10px;
-  left: 10px;
+  /* display: inline-block; */
+  top: 105px;
+  left: 50px;
+  cursor: pointer;
   fill: var(--title-text-color);
-  z-index: 1000;
+}
+.icon-email {
+  position: absolute;
+  top: 238px;
+  left: 50px;
+  cursor: pointer;
+  fill: var(--title-text-color);
 }
 .icon-phone {
   fill: var(--title-text-color);
+  position: absolute;
+  top: 172px;
+  left: 50px;
+  cursor: pointer;
 }
 .form-input:focus,
-.form-input:hover {
-  border: 1px solid #2196f3;
+.form-input:hover,
+.icon-person:hover,
+.icon-person:focus,
+.icon-phone:hover,
+.icon-phone:focus,
+.icon-email:hover,
+.icon-email:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+  .example {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
 .textarea {
   padding: 12px 16px;
@@ -744,6 +772,15 @@ header .logo {
   padding-bottom: 15px;
   cursor: pointer;
 }
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid var(--accent-color);
+  .example {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
 .title-form-footer {
   font-size: 14px;
   line-height: 1.17;
@@ -772,7 +809,8 @@ header .logo {
 }
 .icon-subscribe {
   position: absolute;
-  right: 15px;
-  bottom: 30px;
+  right: 20px;
+  bottom: 40px;
   fill: #fff;
+  cursor: pointer;
 }
