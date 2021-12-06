@@ -714,6 +714,7 @@ header .logo {
   /* outline: 1px solid gold; */
   padding-top: 16px;
   margin-left: 93px;
+  position: relative;
 }
 .footer-input {
   width: 358px;
@@ -757,4 +758,10 @@ header .logo {
   padding-right: 62px;
   cursor: pointer;
   margin-left: 12px;
+}
+.icon-subscribe {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  fill: #fff;
 }
