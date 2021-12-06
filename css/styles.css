@@ -662,6 +662,17 @@ header .logo {
   margin-bottom: 10px;
   cursor: pointer;
 }
+.icon-person {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 10px;
+  fill: var(--title-text-color);
+  z-index: 1000;
+}
+.icon-phone {
+  fill: var(--title-text-color);
+}
 .form-input:focus,
 .form-input:hover {
   border: 1px solid #2196f3;
