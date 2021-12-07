@@ -685,6 +685,7 @@ header .logo {
 .form-input:focus + .icon-phone,
 .form-input:hover + .icon-phone {
   border-color: var(--accent-color);
+  outline: var(--accent-color);
   fill: var(--accent-color);
   transition-property: border-color, fill;
   transition-duration: 250ms;
@@ -740,8 +741,8 @@ header .logo {
 }
 .textarea:hover,
 .textarea:focus {
-  border: 1px solid #2196f3;
-  transition-property: border;
+  outline: 1px solid var(--accent-color);
+  transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -800,6 +801,9 @@ header .logo {
 .form-btn:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------------------------------------Форма футер */
 .form-footer {
@@ -828,9 +832,9 @@ header .logo {
 
 .footer-input:hover,
 .footer-input:focus {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
   color: #e5e5e5;
-  transition-property: border, color;
+  transition-property: outline, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* background: var(--accent-color); */
