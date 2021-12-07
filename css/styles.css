@@ -663,6 +663,24 @@ header .logo {
   margin-bottom: 10px;
   cursor: pointer;
 }
+.form-input:hover,
+.form-input:focus,
+.form-input:focus + .icon-person,
+.form-input:hover + .icon-person,
+.form-input:focus + .icon-email,
+.form-input:hover + .icon-email,
+.form-input:focus + .icon-phone,
+.form-input:hover + .icon-phone {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /*                                                         Префікси */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .icon-person {
   position: absolute;
   /* display: inline-block; */
@@ -710,6 +728,9 @@ header .logo {
 .textarea:hover,
 .textarea:focus {
   border: 1px solid #2196f3;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-check {
   display: inline-block;
@@ -792,23 +813,12 @@ header .logo {
 .footer-input:focus {
   border: 1px solid var(--accent-color);
   color: #e5e5e5;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* background: var(--accent-color); */
 }
-.form-input:hover,
-.form-input:focus,
-.form-input:focus + .icon-person,
-.form-input:hover + .icon-person,
-.form-input:focus + .icon-email,
-.form-input:hover + .icon-email,
-.form-input:focus + .icon-phone,
-.form-input:hover + .icon-phone {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-  /*                                                         Префікси */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+
 .title-form-footer {
   font-size: 14px;
   line-height: 1.17;
