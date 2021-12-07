@@ -585,7 +585,7 @@ header .logo {
   color: var(--for-black-color);
   margin-left: 70px;
 }
-/* -----------------------------------------------Modalka */
+/* --------------------backdrop-end--------------------------Modalka */
 .backdrop {
   position: fixed;
   top: 0;
