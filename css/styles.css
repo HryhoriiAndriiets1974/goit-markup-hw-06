@@ -763,7 +763,7 @@ header .logo {
   appearance: none;
   position: absolute;
 }
-.icon-check {
+/* .icon-check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -771,15 +771,26 @@ header .logo {
   border-radius: 4px;
   margin-left: 12px;
   margin-right: 9px;
-}
-.conditions:checked + .icon-check {
+} */
+/* .conditions:checked + .icon-check {
   background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
+} */
+.icon-check {
+  border: 2px solid var(--primary-text-color);
+  border-radius: 4px;
+  background-color: var(--for-black-color);
+  fill: var(--for-black-color);
 }
-
+.conditions:checked + .icon-check {
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 .form-btn {
   font-weight: bold;
   font-size: 16px;
