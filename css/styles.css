@@ -784,12 +784,17 @@ header .logo {
   border-radius: 4px;
   background-color: var(--for-black-color);
   fill: var(--for-black-color);
+  margin-left: 12px;
+  margin-right: 9px;
 }
 .conditions:checked + .icon-check {
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   fill: var(--accent-color);
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn {
   font-weight: bold;
